@@ -12,7 +12,7 @@ tests_require = [
 ]
 
 setup(
-    name='framework',
+    name='framework-zf',
     version='0.0.1',
     description='GCP DataScience Project End to End Testing',
     author='Ziran Feng',
@@ -20,7 +20,12 @@ setup(
     package_dir={'framework': 'framework'},
     package_data={'': ['resources/*']},
     packages=find_packages(exclude=['tests', '*.tests', '*.tests.*']),
-    python_requires='==3.6.*',
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.5',
     install_requires=[
         'beautifulsoup4>=4.8.0',
         'geopy>=1.20.0',
